@@ -10,10 +10,16 @@ models:
         data_type: varchar
         constraints:
           - type: not_null
+        tests:
+          - unique
+          - not_null        
       - name: order_id
         data_type: varchar
         constraints:
           - type: not_null
+        tests:
+          - unique
+          - not_null
       - name: product_id
         data_type: varchar
       - name: location_id
